@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Sederhana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md lg:max-w-lg">
+        <h2 class="text-2xl font-bold mb-4 text-center">To-Do List</h2>
+        <form id="todo-form" class="flex mb-4">
+            <input type="text" id="task-input" placeholder="Tambahkan tugas" class="w-full p-2 border rounded-l">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r">Add</button>
+        </form>
+        <ul id="todo-list" class="space-y-2"></ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md lg:max-w-lg mt-6 text-center">
+        <h2 class="text-2xl font-bold mb-4">Kalkulator</h2>
+        <input type="number" id="angka1" placeholder="Masukkan angka pertama" class="w-full p-2 border rounded mb-2">
+        <input type="number" id="angka2" placeholder="Masukkan angka kedua" class="w-full p-2 border rounded mb-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mb-4">
+            <button id="btn-tambah" class="bg-blue-500 text-white p-2 rounded">+</button>
+            <button id="btn-kurang" class="bg-red-500 text-white p-2 rounded">-</button>
+            <button id="btn-kali" class="bg-green-500 text-white p-2 rounded">×</button>
+            <button id="btn-bagi" class="bg-yellow-500 text-white p-2 rounded">÷</button>
+            <button id="btn-pangkat" class="bg-purple-500 text-white p-2 rounded">^</button>
+            <button id="btn-akar" class="bg-indigo-500 text-white p-2 rounded">√</button>
+            <button id="btn-modulus" class="bg-pink-500 text-white p-2 rounded col-span-2 md:col-span-1">%</button>
+        </div>
+        <button id="btn-reset" class="bg-gray-500 text-white p-2 rounded w-full mb-4">Reset</button>
+        <div id="hasil-kalkulator" class="text-lg font-semibold text-gray-700"></div>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md lg:max-w-lg mt-6">
+        <h2 class="text-2xl font-bold mb-4 text-center">Form Validasi</h2>
+        <form id="validation-form" class="space-y-4">
+            <input type="text" id="name" placeholder="Nama" class="w-full p-2 border rounded">
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 border rounded">
+            <input type="password" id="password" placeholder="Password" class="w-full p-2 border rounded">
+            <button type="submit" class="bg-green-500 text-white px-4 py-2 w-full rounded">Submit</button>
+        </form>
+        <p id="validation-message" class="text-red-500 text-center mt-2"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
