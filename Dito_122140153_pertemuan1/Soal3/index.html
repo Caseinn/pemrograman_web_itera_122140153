@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Sederhana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md lg:max-w-lg mt-6">
+        <h2 class="text-2xl font-bold mb-4 text-center">Form Validasi</h2>
+        <form id="validation-form" class="space-y-4">
+            <input type="text" id="name" placeholder="Nama" class="w-full p-2 border rounded">
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 border rounded">
+            <input type="password" id="password" placeholder="Password" class="w-full p-2 border rounded">
+            <button type="submit" class="bg-green-500 text-white px-4 py-2 w-full rounded">Submit</button>
+        </form>
+        <p id="validation-message" class="text-red-500 text-center mt-2"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
