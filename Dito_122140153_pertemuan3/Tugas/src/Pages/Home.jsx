@@ -12,7 +12,7 @@ export default function Home() {
   const [filter, setFilter] = useState("All");
   const [query, setQuery] = useState("");
   const [editing, setEditing] = useState(null);
-  const [dialogOpen, setDialogOpen] = useState(false); 
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   const visible = books
     .filter((b) => filter === "All" || b.status === filter)
@@ -30,6 +30,11 @@ export default function Home() {
     }
   };
 
+  const handleCloseDialog = () => {
+    setEditing(null); // 
+    setDialogOpen(false);
+  };
+
   return (
     <section className="space-y-6">
       <div className="flex flex-wrap gap-4 mb-6">
@@ -44,7 +49,10 @@ export default function Home() {
 
       <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
         <DialogTrigger asChild>
-          <Button onClick={() => setDialogOpen(true)}>Add Book</Button>
+          <Button onClick={() => {
+            setDialogOpen(true);
+            setEditing(null); 
+          }}>Add Book</Button>
         </DialogTrigger>
         <DialogContent>
           <DialogTitle>{editing ? "Edit Book" : "Add a New Book"}</DialogTitle>

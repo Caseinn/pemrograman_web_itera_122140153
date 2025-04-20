@@ -15,9 +15,6 @@ test("should call onDelete when delete button is clicked", () => {
   expect(mockDelete).toHaveBeenCalledWith("2");
 });
 
-import { render } from "@testing-library/react";
-import { BookList } from "../components/BookList";
-
 test("should display grid with responsive layout", () => {
   const books = [
     { id: "1", title: "Test Book 1", author: "Author 1", status: "Reading" },

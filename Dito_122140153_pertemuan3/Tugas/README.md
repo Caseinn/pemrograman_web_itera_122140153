@@ -1,12 +1,26 @@
-# React + Vite
+# React Book Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi manajemen buku berbasis **React JS** yang memungkinkan pengguna untuk menambah, mengedit, dan menghapus buku dari koleksi mereka. Aplikasi ini menggunakan React Hooks untuk pengelolaan state dan React Context untuk state global.
 
-Currently, two official plugins are available:
+## Deskripsi Aplikasi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplikasi ini dirancang untuk mengelola koleksi buku, memungkinkan pengguna untuk:
+- **Menambah buku baru** dengan informasi judul, penulis, dan status.
+- **Mengedit informasi buku** yang ada.
+- **Menghapus buku** dari daftar.
+- **Memfilter buku** berdasarkan status (misalnya: "Own", "Reading", "Wishlist").
+- **Mencari buku** berdasarkan judul.
 
-## Expanding the ESLint configuration
+### Fitur Aplikasi:
+- **Menambah Buku**: Form untuk menambah buku baru.
+- **Mengedit Buku**: Pengguna dapat mengedit informasi buku yang ada.
+- **Menghapus Buku**: Tombol untuk menghapus buku yang dipilih.
+- **Memfilter Buku**: Fitur filter berdasarkan status buku.
+- **Pencarian Buku**: Fitur pencarian berdasarkan judul buku.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Screenshot Aplikasi:
+![Home](public/Home.png)
+![Add](public/Add.png)
+![Edit](public/Edit.png)
+![Stats](public/Stats.png)
+![Test](public/Test.png)
