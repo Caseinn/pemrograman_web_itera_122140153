@@ -14,7 +14,7 @@ Aplikasi **Personal Dashboard** adalah aplikasi manajemen tugas sederhana yang m
 
 ## Aplikasi
 
-![Personal Dashboard - Task Manager]
+![Personal Dashboard - Task Manager](https://caseinn.github.io/pemrograman_web_itera_122140153/Dito_122140153_pertemuan2/Tugas/)
 
 ## Fitur ES6+ yang Diimplementasikan
 
