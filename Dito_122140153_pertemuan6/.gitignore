@@ -1,0 +1,86 @@
+# --- General Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+.installed.cfg
+
+# --- Virtual Environment ---
+env/
+ENV/
+env.bak/
+venv/
+venv.bak/
+.venv/
+
+# --- Build / Packaging ---
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+
+# --- Logs and coverage ---
+*.log
+*.pot
+*.mo
+*.pyc
+*.pyo
+*.pyd
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.pytest_cache/
+htmlcov/
+.nox/
+
+# --- Mypy / Linting / Typing ---
+.mypy_cache/
+.dmypy.json
+.pytype/
+.pylint.d
+.pyre/
+
+# --- Sphinx docs ---
+docs/_build/
+
+# --- Pyramid-specific ---
+development.ini
+production.ini
+*.db
+*.sqlite
+*.sqlite3
+*.ini~
+*.bak
+
+# --- Database / Alembic ---
+alembic.ini
+migrations/versions/*.pyc
+migrations/__pycache__/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
