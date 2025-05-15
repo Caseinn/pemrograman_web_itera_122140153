@@ -62,16 +62,12 @@ htmlcov/
 docs/_build/
 
 # --- Pyramid-specific ---
-development.ini
-production.ini
 *.db
 *.sqlite
 *.sqlite3
-*.ini~
 *.bak
 
 # --- Database / Alembic ---
-alembic.ini
 migrations/versions/*.pyc
 migrations/__pycache__/
 
@@ -83,4 +79,3 @@ migrations/__pycache__/
 .DS_Store
 Thumbs.db
 ehthumbs.db
-desktop.ini
